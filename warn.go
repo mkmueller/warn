@@ -9,7 +9,7 @@ type Warn interface {
 	// Append another warning message
 	Append(string)
 
-	// Warnings will return a slice of warning messages
+	// Return a slice of warning messages
 	Warnings() []string
 }
 

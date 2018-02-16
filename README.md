@@ -28,13 +28,13 @@ Package warn implements methods to utilize multiple warnings
 
 
 
-## <a name="Warn">type</a> [Warn](/src/target/warn.go?s=137:286#L8)
+## <a name="Warn">type</a> [Warn](/src/target/warn.go?s=143:278#L8)
 ``` go
 type Warn interface {
     // Append another warning message
     Append(string)
 
-    // Warnings will return a slice of warning messages
+    // Return a slice of warning messages
     Warnings() []string
 }
 ```
@@ -44,7 +44,7 @@ type Warn interface {
 
 
 
-### <a name="New">func</a> [New](/src/target/warn.go?s=362:388#L21)
+### <a name="New">func</a> [New](/src/target/warn.go?s=354:380#L21)
 ``` go
 func New(text string) Warn
 ```
